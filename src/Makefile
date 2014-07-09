@@ -74,7 +74,6 @@ else
 	FINAL_LIBS+= -pthread
 endif
 endif
-
 # Include paths to dependencies
 FINAL_CFLAGS+= -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src
 
