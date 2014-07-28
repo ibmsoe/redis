@@ -66,7 +66,7 @@ else
 ifeq ($(uname_S),AIX)
         # AIX
         FINAL_LDFLAGS+= -Wl,-bexpall
-        FINAL_LIBS+= -pthread
+        FINAL_LIBS+= -pthread -lcrypt -lbsd
 
 else
 	# All the other OSes (notably Linux)
